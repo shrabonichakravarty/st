@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Student Registration Form</title> 
+        </head> 
+        <body>
+             <h1>Student Registration Form</h1>
+              <form action="/submit" method="post" enctype="multipart/form-data"> 
+                <label for="firstName">First Name:</label>
+                 <input type="text" id="firstName" name="firstName" required><br><br> 
+                 <label for="lastName">Last Name:</label>
+                  <input type="text" id="lastName" name="lastName" required><br><br>
+                   <label for="fatherName">Father's Name:</label>
+                    <input type="text" id="fatherName" name="fatherName" required><br><br>
+                     <label for="motherName">Mother's Name:</label> 
+                     <input type="text" id="motherName" name="motherName" required><br><br> 
+                     <label for="address">Address:</label>
+                      <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br> <label for="city">City:</label>
+                       <input type="text" id="city" name="city" required><br><br>
+                        <label for="state">State:</label>
+                         <input type="text" id="state" name="state" required><br><br>
+                          <label for="dob">Date of Birth:</label> 
+                          <input type="date" id="dob" name="dob" required><br><br> 
+                          <label>Gender:</label>
+                           <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                             <input type="radio" id="female" name="gender" value="female" required> 
+                             <label for="female">Female</label><br><br> 
+                             <label for="course">Course:</label>
+                              <select id="course" name="course" required>
+                                 <option value="science">Science</option>
+                                  <option value="arts">Arts</option> 
+                                  <option value="commerce">Commerce</option>
+                                 </select><br><br> 
+                                 <label for="qualification10">Percentage in Class 10th:</label>
+                                  <input type="number" id="qualification10" name="qualification10"step="0.01"min="0" max="100" required><br><br>
+                                   <label for="qualification12">Percentage in Class 12th:</label>
+                                    <input type="number" id="qualification12" name="qualification12" step="0.01" min="0" max="100" required><br><br>  
+                                    <label for="markSheet">Upload Mark Sheet:</label> <input type="file" id="markSheet" name="markSheet" accept=".pdf,.jpg,.jpeg,.png" required><br><br> 
+                                    <input type="submit" value="Submit">
+                                 </form>
+                                 </body> 
+                                 </html>
